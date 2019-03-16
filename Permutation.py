@@ -1,10 +1,9 @@
 L="protosem"
 import itertools
 import nltk
-#nltk.download('words')
-from nltk.corpus import words
+from nltk.corpus import words #importing word dictionary
 for permutation in itertools.permutations(L):
     n="".join(permutation)
-    print(n)
+    print(n) #all permutations
     if n in words.words()==True:
-        print(n)
+        print(n) #correct permutations
